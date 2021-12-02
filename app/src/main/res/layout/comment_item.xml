@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_Profile"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseline_send_24"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_toRightOf="@id/image_Profile"
+        android:fontFamily="@font/baloo"
+        android:text="Nomi"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_toRightOf="@id/image_Profile"
+        android:text="Coment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_18sp" />
+
+    <TextView
+        android:id="@+id/time_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/time_username_coment"
+        android:text="dsjcbhsm"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginRight="@dimen/size_5dp"
+        />
+    <TextView
+        android:id="@+id/time_username_coment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="dsjcbhsm"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginRight="@dimen/size_5dp"
+
+        />
+</RelativeLayout>

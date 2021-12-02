@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.SignUpActivity">
+
+    <View
+        android:id="@+id/night_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/night_bag"
+
+        />
+
+    <View
+        android:id="@+id/day_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/day_bag"
+        tools:layout_editor_absoluteX="-170dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_150dp"
+        android:src="@drawable/sun_day"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".85" />
+
+    <ImageView
+        android:id="@+id/day_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <ImageView
+        android:id="@+id/night_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <com.mahfa.dnswitch.DayNightSwitch
+        android:id="@+id/day_night_switch"
+        android:layout_width="@dimen/size_70dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTEl"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bag_night_switch"
+        android:hint="+998 XX xxx xx xx"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/size_20dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/text_18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintWidth_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_3dp"
+        android:text="Phone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtTEl"
+        app:layout_constraintStart_toStartOf="@+id/edtTEl" />
+
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_bg"
+        android:text="Ok"
+
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/edtTEl"
+        app:layout_constraintStart_toStartOf="@+id/edtTEl"
+        app:layout_constraintTop_toBottomOf="@+id/edtTEl" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
